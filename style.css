@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #1A1A1D;
-    color: #f0f0f0;
+    
 }
 html{
     height: 100%;
@@ -11,6 +10,8 @@ html{
 body{
     height: 100%;
     width: 100%;
+    background-color: #1A1A1D;
+    color: #f0f0f0;
 }
 .head{
     height: 12%;
@@ -50,11 +51,11 @@ body{
     color: #f0f0f0;
     background-color: transparent;
     transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
   }
   
   .navigate i {
     color: inherit;
-    background: none;
     transition: color 0.2s;
   }
   
@@ -75,15 +76,20 @@ body{
     justify-content: center;
     flex-direction: column;
     padding-right: 50px;
+    gap: 2px;
 }
 .clock #time{
-    height: 40%;
-    font-size: 2.3rem;
+    font-weight: 600;
+    font-size: 2rem;
 }
-.clock #date,#day{
-    height: 20%;
-    margin-bottom: 3px;
-    font-size: 1.3rem;
+.clock #day{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.clock #date{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #B13BFF;
 }
 .disp{
     width: 100%;
