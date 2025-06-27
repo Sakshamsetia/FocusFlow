@@ -9,7 +9,6 @@ function clock(){
     let day = document.getElementById('day');
     day.innerHTML = DayList[Clock.getDay()];
 }
-
 setInterval(clock,1000);
 
 //Tab Switch Code
