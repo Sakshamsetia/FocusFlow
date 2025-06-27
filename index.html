@@ -18,13 +18,19 @@
     </div>
     <div class="bd">
         <div class="nav">
-            <button class="navigate"><i class="fa-solid fa-house"></i>DashBoard</button>
-            <button class="navigate"><i class="fa-solid fa-square-check"></i>Tasks</button>
-            <button class="navigate"><i class="fa-solid fa-clock"></i>Timer</button>
-            <button class="navigate"><i class="fa-solid fa-note-sticky"></i>Notes</button>
-            <button class="navigate"><i class="fa-solid fa-circle-play"></i>Play</button>
+            <button id="DashBoard-bu" class="navigate"><i class="fa-solid fa-house"></i>DashBoard</button>
+            <button id="Tasks-bu" class="navigate"><i class="fa-solid fa-square-check"></i>Tasks</button>
+            <button id="Timer-bu" class="navigate"><i class="fa-solid fa-clock"></i>Timer</button>
+            <button id="Notes-bu" class="navigate"><i class="fa-solid fa-note-sticky"></i>Notes</button>
+            <button id="Play-bu" class="navigate"><i class="fa-solid fa-circle-play"></i>Play</button>
         </div>
-        <div class="disp"></div>
+        <div class="disp">
+            <div id="DashBoard" class="tab "></div>
+            <div id="Tasks" class="tab hidden"></div>
+            <div id="Timer" class="tab hidden"></div>
+            <div id="Notes" class="tab hidden"></div>
+            <div id="Play" class="tab hidden"></div>
+        </div>
     </div>
 
     <script src="./scripts.js"></script>
