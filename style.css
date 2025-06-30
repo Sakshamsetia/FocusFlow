@@ -101,14 +101,11 @@ body{
     width: 100%;
 }
 
-#DashBoard{
+/* #DashBoard{
     background-color: red;
-}
+} */
 #Tasks{
     background-color: green;
-}
-#Timer{
-    background-color: blue;
 }
 #Notes{
     background-color: orange;
@@ -116,6 +113,163 @@ body{
 #Play{
     background-color: violet;
 }
-.hidden{
+
+
+/* timer */
+#Timer{
+    display: flex;
+    flex-direction: column;
+}
+.progress{
+    width: 100%;
+    height: 20px;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    display: inherit;
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.1);
+    border: 2px #f0f0f0 solid;
+}
+.fill{
+    display: inherit;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #B13BFF;
+    animation: forwards filling linear;
+    animation-duration: 30s;
+    animation-play-state: running;
+}
+@keyframes filling {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.time-display{
+    height: 50%;
+    width: 100%;
+    font-size: 4rem;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    height: 250px;
+    width: 250px;
+    border: #B13BFF 3px solid;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.buttonSet{
+    width: 100%;
+    height: 30%;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.tc{
+    height: 60px;
+    width: 100px;
+    border: none;;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #B13BFF;
+    color: #f0f0f0;
+    font-size: 1.5rem
+}
+.tc:hover{
+    background-color: #f0f0f0;
+    color: #B13BFF;
+}
+
+.edit-timer {
+    position:relative;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    color: #B13BFF;
+    cursor: pointer;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 26, 29, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background-color: #2D2D31;
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #f0f0f0;
+    width: 300px;
+  }
+  
+  .modal-content h3 {
+    color: #B13BFF;
+    margin-bottom: 20px;
+  }
+  
+  .modal-controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .control-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .control-group input {
+    width: 70px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .modal-btn {
+    background-color: #B13BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .modal-btn.cancel {
+    background-color: #555;
+  }
+
+  .hidden{
     display: none;
 }

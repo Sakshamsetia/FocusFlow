@@ -25,9 +25,47 @@
             <button id="Play-bu" class="navigate"><i class="fa-solid fa-circle-play"></i>Play</button>
         </div>
         <div class="disp">
-            <div id="DashBoard" class="tab "></div>
+            <div id="DashBoard" class="tab hidden"></div>
             <div id="Tasks" class="tab hidden"></div>
-            <div id="Timer" class="tab hidden"></div>
+            <div id="Timer" class="tab">
+                <div class="time-display">
+                    <div class="circle">00:25:00</div>
+                </div>
+                
+                <div class="progress">
+                    <div class="bar">
+                        <!-- <div class="fill"></div> -->
+                    </div>
+                </div>
+                <div class="buttonSet">
+                    <button class="tc">Play</button>
+                    <button class="tc">Pause</button>
+                    <button class="tc">Reset</button>
+                </div>
+                <!-- Edit Button (inside circle maybe) -->
+                <button id="openTimeSetter" class="edit-timer">⏱️ Edit</button>
+
+                <!-- Popup Modal -->
+                <div id="timeSetterModal" class="modal hidden">
+                <div class="modal-content">
+                        <h3>Set Timer</h3>
+                        <div class="modal-controls">
+                        <div class="control-group">
+                            <label>Minutes</label>
+                            <input id="minutesInput" type="number" min="0" max="99" value="25">
+                        </div>
+                        <div class="control-group">
+                            <label>Seconds</label>
+                            <input id="secondsInput" type="number" min="0" max="59" value="00">
+                        </div>
+                        </div>
+                        <div class="modal-buttons">
+                        <button id="saveTime" class="modal-btn">Save</button>
+                        <button id="cancelTime" class="modal-btn cancel">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="Notes" class="tab hidden"></div>
             <div id="Play" class="tab hidden"></div>
         </div>
