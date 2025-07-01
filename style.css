@@ -142,7 +142,7 @@ body{
     background-color: #B13BFF;
     animation: forwards filling linear;
     animation-duration: 30s;
-    animation-play-state: running;
+    animation-play-state:paused;
 }
 @keyframes filling {
     0%{
